@@ -14,9 +14,9 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import * as Yup from 'yup';
+import useSubmit from "/home/minato/Desktop/React/Project-portfolio/src/hooks/useSubmit.js"
 import FullScreenSection from "./FullScreenSection";
-import useSubmit from "../hooks/useSubmit";
-import {useAlertContext} from "../context/alertContext";
+import {useAlertContext} from "/home/minato/Desktop/React/Project-portfolio/src/context/alertContext.js";
 
 const LandingSection = () => {
   const {isLoading, response, submit} = useSubmit();

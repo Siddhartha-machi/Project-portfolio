@@ -1,8 +1,7 @@
 import React from "react";
-import FullScreenSection from "./FullScreenSection";
 import { Box, Heading } from "@chakra-ui/react";
-import Card from "./Card";
-
+import FullScreenSection from "./FullScreenSection";
+import Card from "../cardComponents/Card";
 const projects = [
   {
     title: "React Space",
@@ -47,6 +46,7 @@ const ProjectsSection = () => {
         gridTemplateColumns="repeat(2,minmax(0,1fr))"
         gridGap={8}
       >
+        
         {projects.map((project) => (
           <Card
             key={project.title}
