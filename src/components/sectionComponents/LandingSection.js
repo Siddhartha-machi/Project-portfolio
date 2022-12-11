@@ -3,7 +3,7 @@ import { Avatar, Container, Heading, HStack, Stack, VStack } from "@chakra-ui/re
 import FullScreenSection from "./FullScreenSection";
 import My_photo from "../images/My_photo.jpg"
 
-const greeting = "Hello, I am Siddhartha!";
+const greeting = "Hello, I am Siddhartha Reddy Machi!";
 const bio1 = "An enthusiastic Full-stack developer";
 const bio2 = "specialised in Django";
 

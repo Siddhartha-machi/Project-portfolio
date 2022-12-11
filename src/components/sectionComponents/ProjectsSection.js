@@ -2,6 +2,8 @@ import React from "react";
 import { Box, Heading } from "@chakra-ui/react";
 import FullScreenSection from "./FullScreenSection";
 import Card from "../cardComponents/Card";
+
+
 const projects = [
   {
     title: "React Space",
@@ -35,7 +37,7 @@ const ProjectsSection = () => {
       backgroundColor="#14532d"
       isDarkBackground
       p={8}
-      alignItems="flex-start"
+      alignItems="center"
       spacing={8}
     >
       <Heading as="h1" id="projects-section">
@@ -52,7 +54,6 @@ const ProjectsSection = () => {
             key={project.title}
             title={project.title}
             description={project.description}
-            imageSrc={project.getImageSrc()}
           />
         ))}
       </Box>

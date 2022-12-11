@@ -11,10 +11,9 @@ const Footer = () => {
           color="white"
           justifyContent="center"
           alignItems="center"
-          maxWidth="1024px"
           height={16}
         >
-          <p>Pete • © 2022</p>
+          <p>Siddhartha Reddy Machi • © 2022</p>
         </Flex>
       </footer>
     </Box>

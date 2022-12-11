@@ -11,17 +11,16 @@ const Card = ({ title, description, imageSrc }) => {
   const cardStyle = {
     backgroundColor : 'white',
     color : 'black',
-    borderRadius : '3%',
+    borderRadius : '2%',
 
   }
   
   
   return (
-    <VStack style={cardStyle}>
-      <Image src={imageSrc} alt="project-image" style={{borderRadius : '3%'}}/>
+    <VStack style={cardStyle} align="start">
       <VStack padding="1rem" align="start">
         <Heading as="h3" size="md">{ title}</Heading>
-        <Text fontSize="13px" color="gray" noOfLines={2}>{description}</Text>
+        <Text fontSize="13px" color="gray" noOfLines={3}>{description}</Text>
         <a href="#see-more" >see more  <FontAwesomeIcon icon={faArrowRight} size="1x" /></a>
       </VStack>
       

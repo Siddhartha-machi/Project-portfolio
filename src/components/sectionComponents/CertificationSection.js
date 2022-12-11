@@ -9,7 +9,6 @@ function CertificationSection(props) {
         backgroundColor="#2A4365"
         isDarkBackground
         p={8}
-        alignItems="flex-start"
         spacing={8}
       >
         <Heading as="h1" id="education-section">

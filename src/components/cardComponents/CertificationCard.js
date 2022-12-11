@@ -1,18 +1,27 @@
-import { Card, CardBody, CardHeader, Heading, Text } from '@chakra-ui/react';
+import { Heading, Text, VStack } from '@chakra-ui/react';
 import React from 'react';
 
 function CertificationCard(props) {
-    return (
-        <Card  variant={"filled"}>
-        <CardHeader>
-          <Heading size='md'>Title : {props.data.title}</Heading>
-        </CardHeader>
-        <CardBody>
-          <Text>Duration : {props.data.duration}</Text>
-          <Text>Platform : {props.data.platform}</Text>
-        </CardBody>
-      </Card>
-    );
+
+
+  const cardStyle = {
+    backgroundColor : 'white',
+    color : 'black',
+    borderRadius : '2%', 
+
+  }
+  
+  
+  return (
+    <VStack style={cardStyle} align="flex-start">
+      <VStack padding="1rem" align="start">
+        <Heading as="h3" size="md">{ props.data.title}</Heading>
+        <Text fontSize="13px" color="gray" noOfLines={3}>{props.data.duration}</Text>
+        <Text fontSize="13px" color="gray" noOfLines={3}>{props.data.platform}</Text>
+      </VStack>     
+    </VStack>
+  );
+    
 }
 
 export default CertificationCard;

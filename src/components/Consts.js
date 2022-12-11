@@ -1,3 +1,10 @@
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {
+  faGithub,
+  faLinkedin,
+  faMedium,
+  faStackOverflow,
+} from "@fortawesome/free-brands-svg-icons";
 
 const constData = [
     {
@@ -62,4 +69,29 @@ const coursesConst = [
 
 ]
 
-export  {constData , coursesConst }
+const socials = [
+    {
+      icon: faEnvelope,
+      url: "mailto: siddhartha.machi@gmail.com",
+    },
+    {
+      icon: faGithub,
+      url: "https://github.com/Siddhartha-machi",
+    },
+    {
+      icon: faLinkedin,
+      url: "https://www.linkedin.com/in/machi-siddhartha-reddy-0814631a9/",
+    },
+    {
+      icon: faMedium,
+      url: "https://medium.com",
+    },
+    {
+      icon: faStackOverflow,
+      url: "https://stackoverflow.com",
+    },
+  ];
+
+
+
+export  {constData , coursesConst , socials }

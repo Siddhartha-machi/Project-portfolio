@@ -8,11 +8,10 @@ function ECard(props) {
         backgroundColor : 'white',
         color : 'black',
         borderRadius : '3%',
-        align : "center",
       }
     return (
 
-            <VStack padding="1rem" align="start">
+            <VStack style={cardStyle} padding="1rem" align="start">
                 <Heading as="h3" size="md">{ props.data.title}</Heading>
                 <Divider   />
                 <Text fontSize="13px" color="gray" noOfLines={2}>Course : {props.data.course}</Text>

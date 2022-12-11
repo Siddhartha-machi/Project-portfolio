@@ -9,13 +9,13 @@ function EducationSection(props) {
         backgroundColor="#2A4365"
         isDarkBackground
         p={8}
-        alignItems="flex-start"
+        alignItems="center"
         spacing={8}
       >
         <Heading as="h1" id="education-section">
           Education
         </Heading>
-        <Wrap  >
+        <Wrap align="center" >
         
           {props.data.map((edata,index) => (
              (<WrapItem key={index}> 

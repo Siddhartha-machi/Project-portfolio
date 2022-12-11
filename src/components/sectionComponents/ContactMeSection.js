@@ -42,7 +42,7 @@ const LandingSection = () => {
     initialValues: {
       firstName : "",
       email : "",
-      type : "hireMe",
+      type : "",
       comment : ""
     },
 
@@ -65,14 +65,13 @@ const LandingSection = () => {
       py={16}
       spacing={8}
     >
-      <VStack w="1024px" p={32} alignItems="flex-start">
-        <Heading as="h1" id="contactme-section">
+      <VStack   width="60%" align=""  pl={3} pr={3}>
+        <Heading as="h1" id="contactme-section" pb={4} >
           Contact me
-        </Heading>
-        <Box p={6} rounded="md" w="100%">
-          <form onSubmit={formik.handleSubmit}>
-            <VStack spacing={4}>
-
+        </Heading>   
+        <form onSubmit={formik.handleSubmit} >
+            <VStack spacing={4} align="center">
+            
               <FormControl isInvalid={!!formik.errors.firstName && formik.touched.firstName}>
                 <FormLabel htmlFor="firstName">Name</FormLabel>
                 <Input
@@ -94,14 +93,14 @@ const LandingSection = () => {
                 <FormErrorMessage>{formik.errors.email}</FormErrorMessage>
               </FormControl>
 
-              <FormControl>
+              <FormControl >
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" onChange={formik.handleChange} >
-                  <option value="hireMe">Freelance project proposal</option>
-                  <option value="openSource">
+                <Select id="type" name="type"  onChange={formik.handleChange} >
+                  <option value="hireMe" style={{ color: 'black' }} >Freelance project proposal</option>
+                  <option value="openSource"  style={{ color: 'black' }}>
                     Open source consultancy session
-                  </option>
-                  <option value="other">Other</option>
+                  </option >
+                  <option value="other" style={{ color: 'black' }}>Other</option>
                 </Select>
               </FormControl>
 
@@ -122,15 +121,14 @@ const LandingSection = () => {
                 {isLoading? 
                 <Spinner 
                 thickness='4px'
-                speed='0.50s'
+                speed='1.00s'
                 emptyColor='gray.200'
                 color='blue.500'
                 size='md'
                 /> : "Submit"}
               </Button>
             </VStack>
-          </form>
-        </Box>
+            </form>
       </VStack>
     </FullScreenSection>
   );
